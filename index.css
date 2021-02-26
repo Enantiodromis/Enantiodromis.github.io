@@ -217,13 +217,13 @@ header table {
 }
 .oneline {
     margin-top: 70px;
-    vertical-align: middle;
-    margin: 0.5%;
-    width: 420px;
+    vertical-align: top;
+    margin: 2%;
+    width: 360px;
     height: 70%;
     display: inline-block;
    }
-.oneline img p {
+.oneline img p{
     display:block;
     margin:auto;
 }
@@ -345,7 +345,7 @@ button:focus {
     background: rgba(0, 0, 0,0.8); 
 }
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
     #photos {
     columns:1;
     column-gap:0%;
