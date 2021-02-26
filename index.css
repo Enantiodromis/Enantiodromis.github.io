@@ -207,6 +207,14 @@ header table {
     z-index:1;
     transition:0.4s ease-in-out;
 }
+#photos img {
+    text-align: center;
+    width:90%;
+    columns: 1;
+    column-gap:4%;
+    z-index:1;
+    transition:0.4s ease-in-out;
+}
 .oneline {
     margin-top: 70px;
     vertical-align: middle;
@@ -215,6 +223,10 @@ header table {
     height: 70%;
     display: inline-block;
    }
+.oneline img p {
+    display:block;
+    margin:auto;
+}
 #photos img {
     margin-top: 10px;
     width:auto;
