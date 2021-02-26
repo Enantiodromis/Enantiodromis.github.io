@@ -64,10 +64,9 @@ $(document).ready(function(){
       });
   });
 
-  window.onload = function() {
-    // Month Day, Year Hour:Minute:Second, id-of-element-container
-    countUpFromTime("Jul 31, 1998 06:00:00", 'countup1'); // ****** Change this line!
-  };
+  var run = countUpFromTime("Jul 31, 1998 06:00:00", 'countup1');
+  window.onload = run
+  
   function countUpFromTime(countFrom, id) {
     countFrom = new Date(countFrom).getTime();
     var now = new Date(),
