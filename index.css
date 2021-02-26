@@ -37,7 +37,7 @@ header {
     padding:6vh 4vw;
     position:fixed;
     font-weight:bold;
-    background:transparent;
+    background: white;
     color:#fff;
     transition:0.4s ease-in-out;
     z-index:2;
@@ -203,17 +203,12 @@ header table {
     text-align: center;
     width:100%;
     columns: 1;
-    column-gap:4%;
     z-index:1;
     transition:0.4s ease-in-out;
 }
 #photos img {
     text-align: center;
     width:90%;
-    columns: 1;
-    column-gap:4%;
-    z-index:1;
-    transition:0.4s ease-in-out;
 }
 .oneline {
     margin-top: 70px;
@@ -226,6 +221,17 @@ header table {
 .oneline img p{
     display:block;
     margin:auto;
+}
+.interestholder{
+   text-align: left;
+   width: 100%;
+}
+.interest {
+    display: inline-block;
+    margin: 1% 3%;
+}
+.interest p {
+    text-align: left;
 }
 #photos img {
     margin-top: 10px;
