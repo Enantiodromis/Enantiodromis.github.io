@@ -15,21 +15,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#photos1 {
-  text-align: center;
-  width:100%;
-  columns:1;
-  column-gap:7%;
-  z-index:1;
-  transition:0.4s ease-in-out;
-}
-#photos1 img {
-  width:25%;
-  height: auto;
-  margin: -20px 3%;
-  transition:0.4s ease-in-out;
-}
-
 
 /* Main Page Layout */
 
@@ -39,8 +24,6 @@ body {
   flex-direction: column;
   gap: 96px;
 }
-
-
 
 
 /* Portfolio Header */
