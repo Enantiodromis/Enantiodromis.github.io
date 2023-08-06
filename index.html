@@ -1,178 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="/js/pdfobject.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>George Bradley &#129497</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
-    <div id="magnify">
-        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
-        <div id="img_here"></div>
-    </div>
-    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-        <table>
-            <tr>
-                <td id="logo">GREB.</td>
-                <td id="navigation">
-                    <a href="#work" style="color: rgb(44, 118, 255)">work</a>
-                    <a href="#bio"style="color: rgb(44, 118, 255)">about</a>
-                    <a href="#contact" style="color: rgb(44, 118, 255)">contact</a>
-                </td>
-            </tr>
-        </table>
-    </header>
-    <table id="top_part">
-        <tr>
-            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
-                <h1><span>Hi! I am George_</span> <span style="font-size:35px">&#128075</span></h1>
-                <div class="countup" id="countup1">
-                    <b>I am </b>
-                    <span class="years">00</span>
-                    <span class="timeRefYears">years</span>
-                    <span class="days">00</span>
-                    <span class="timeRefDays">days</span>
-                    <span class="hours">00</span>
-                    <span class="timeRefHours">hours</span>
-                    <span class="minutes">00</span>
-                    <span class="timeRefMinutes">minutes</span>
-                    <span class="seconds">00</span>
-                    <span class="timeRefSeconds">seconds</span>
-                    <b>old</b>
-                  </div>
-                <button class="btn_one" onclick="window.open('docs/George_Bradley_CV.pdf')">My CV</button><br>
-                <table>
-                    <tr>
-                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://github.com/Enantiodromis"><i class="fab fa-github"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="https://www.instagram.com/georgie_porgie_bradley/"><i class="fab fa-instagram"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="https://www.linkedin.com/in/georgerebradley/"><i class="fab fa-linkedin"></i></a></td>
-                    </tr>
-                </table>
-            </td>
-            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
-        </tr>
-    </table>
-    <div id="work">
-        <h1>work</h1>
-        <center>CLICK AN IMAGE TO HAVE A LOOK! 🧐</center>
-        <div id="photos">
-            <br>
-            <div class="oneline">
-                <div id="workdescription">Artificial Intelligence Planning <br> <p>Comparing Optimal Search Plans of Landmark Count and Landmark Cut Heuristicusing A*Search.</p></div>
-                <img onclick="window.open('docs/Artificial _Intelligence_Planning.pdf')"  src="img/aip.png">
-            </div>
-            <div class="oneline">
-                <div id="workdescription">Nature Inspired Learning Algorithms <br> <p>Binary genetic algorithm & Ant-colony optimisation.</p></div>
-                <img onclick="window.open('docs/BIM.pdf')" src="img/bim1.PNG">
-            </div>
-            <div class="oneline">
-                <div id="workdescription">Data Mining <br> <p>Coronavirus Tweets NLP and Image Procesing.</p></div>
-                <img onclick="window.open('docs/George_Bradley_DM_CW_2_Final.pdf')" src="img/dm.png">
-            </div>
-            <div class="oneline">
-                <div id="workdescription">Biologically Inspired Computing <br> <p>Binary Genetic Algorithm by hand.</p></div>
-                <img onclick="window.open('docs/Biologically_Inspired_Computing.pdf')" src="img/bim.png">
-            </div>
-            <div class="oneline">
-                <div id="workdescription">XAI Project Proposal <br> <p>Measuring the quality of explainable artificial
-                    intelligence algorithms applied to two
-                    classification tasks.</p></div>
-                <img onclick="window.open('docs/XAI.pdf')" src="img/XAI.PNG">
-            </div>
-        </div>
-    </div>
-    <div id="bio">
-        <h1>about</h1>
-        <p>
-            <h2>Who am I</h2>
-            I’m a 6ft 6in (2m) 23-year-old, living in London, passionate about keeping fit and finding simple and elegant solutions to complex problems. Enthusiastic about building things and immensely curious about everything.<br>
-            <br>
-            <h2>What am I</h2>
-            I am a recent AI graduate from King's College London and a PhD student at City University's Research Center for Biomedical Engineering.<br>
-            <br>
-            <h2>What drives me</h2>
-            I’m driven by <i>simplicity</i>, <i>elegance</i> and <i>winning</i><br>
-            <br>
-        </p>
+	<head>
+		<meta charset="utf-8">
 
-        <p>
-            <h2>What else I get up to</h2>
-            Away from my computer &#128187 I enjoy running, reading, travelling and most things water related, but especially freediving and sailing.
-        </p>
-        <div id="photos1">
-            <img src1="me.jpeg" src="img/pz1.jpg">
-            <img src1="me.jpeg" src="img/eg.jpeg">
-            <img src1="me.jpeg" src="img/pz2.JPG">
-        </div>
-        <br>
-        <div class= interestholder>
-            <div class= interest>
-                <p>
-                What I am reading 📖<br>
-                    - IF THEN, How one data company invented the future<br>
-                    - The Ethical Algorithm <br>
-                </p>
-            </div>
-            <div class= interest>
-                <p>
-                    What I am listening to 🎧<br>
-                        - The Lex Fridman podcast<br>
-                        - The History of Byzantium<br>
-                </p>
-            </div>
-        </div>
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="./assets/images/me2_2.jpg" />
+		<title>George Bradley</title>
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">Portfolio</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="mailto:georgerebradley@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
     </div>
-    <div id="contact">
-        <h1>contact</h1>
-            <table>
-                <tr>
-                    <td>
-                        <div id="inner_div">
-                            <table id="inner_table">
-                                <tr>
-                                    <td><i class="fas fa-at"></i> &nbsp; georgerebradley@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-map-marker-alt"></i>
-                                    <div id="address">
-                                        Currently in London
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="social" href="https://github.com/Enantiodromis"><i class="fab fa-github" ></i></a>
-                                        <a class="social" href="https://www.instagram.com/georgie_porgie_bradley/"><i class="fab fa-instagram"></i></a>
-                                        <a class="social" href="https://www.linkedin.com/in/georgerebradley/"><i class="fab fa-linkedin" ></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                    <td>
-                        <form action="https://formspree.io/f/mrgowezl" method="POST">
-                        <input  type="text" placeholder="name" name="name" required>
-                        <input type="email" placeholder='email' name="_replyto" required>
-                        <textarea name = "message" placeholder="your message" required rows="5"></textarea><br>
-                        <button class="btn_one" type="submit">Send</button>
-                    </td>
-                </tr>
-            </table>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./assets/images/me2_2.jpg" class="portfolio-header-image">
+        </div>
+
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <!-- <span class="main-title">Hey, I'm George_</span>-->
+              <h1><span class="main-title">Hi! I am George_</span> <span style="font-size:35px">&#128075</span></h1>
+              <div class="countup" id="countup1">
+                <b>I am </b>
+                <span class="years">00</span>
+                <span class="timeRefYears">years</span>
+                <span class="days">00</span>
+                <span class="timeRefDays">days</span>
+                <span class="hours">00</span>
+                <span class="timeRefHours">hours</span>
+                <span class="minutes">00</span>
+                <span class="timeRefMinutes">minutes</span>
+                <span class="seconds">00</span>
+                <span class="timeRefSeconds">seconds</span>
+                <b>old</b>
+              </div>
+              <br>
+              <div class="body-text">I’m a doctoral researcher, passionate about signal processing and finding solutions to real-world problems through the use of data and AI.</div>
+            </div>
+            <!-- <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">My Background / About Me</span>
+        <div class="about-section-content">
+          <div class="body-text">I completed my undergraduate degree in Computer Science from Newcastle University before moving to King's College London to complete a masters in artificial intelligence. Currently I am a doctoral researcher at City Univeristy's Research Centre for Biomedical Engineering My research is oriented around traumatic brain injury. 
+            <br><br>
+            <i>Research summary:</i><br>
+            My research aim is the creation of a non-invasive intracranial pressure (ICP) measurement algorithm, utilising photoplethysmography (PPG) signals collected from the forehand. ICP monitoring is a “gold standard” monitoring modality for severe TBI patients. The current monitoring technique for ICP is through the insertion of a probe through the skull in a procedure under a general anaesthetic. Efficacious ICP monitoring and intervention at clinically defined thresholds may reduce mortality and secondary injury to the brain. Current ICP monitoring is an invasive, high risk and expensive procedure which requires a high level of expertise as well as only being accessible in a hospital setting. My hope is to produce the first effective, non-invasive ICP measurement algorithm helping reduce the cost and complexity of ICP monitoring, consequently reducing the barrier to entry to efficacious monitoring, screening and intervention for patients and healthcare systems, perhaps helping towards the realisation of a "roadside" to "bedside" product.
+          <br><br>I am really excited about how AI and data can help transform healthcare. I am particularly interest in the shift away from exclusively in-hospital care through non/minimally invasive, continuous and ubiquitous physiological monitoring and patient care.   <br><br>Away from my computer I enjoy cycling, BJJ and most things water related, but especially freediving and spearfishing.</div>
+        </div>
+      </div>
+
+      <div id="photos1">
+        <img src1="me.jpeg" src="./assets/images/FREE_1.JPG">
+        <img src1="me.jpeg" src="./assets/images/BJJ_1.jpg">
+        <img src1="me.jpeg" src="./assets/images/CYCLE_1.jpg">
+      </div>
+
+      <!-- PROJECTS / MY WORK SECTION
+      <div id="my-work-section">
+        TODO - Change the subheader-text to whatever you want the Projects section header to say
+        <span class="subheader-text">My Work / My Projects</span>
+
+        <div class="projects-container">
+          
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+        
+          <div class="project-card">
+            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Project Name</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/code.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Project Name</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/sketchbook.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>-->
+      </div>
     </div>
+
+    <!-- FOOTER -->
     <div id="footer">
-        made on earth by a carbon based biological neural network 🧠<br>
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/georgerebradley/">
+        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" target="_blank" href="https://github.com/Enantiodromis">
+        <image src="./assets/icons/github.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://www.instagram.com/georgie_porgie_bradley/">
+        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      </a>-->
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:georgerebradley@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
     </div>
-    <script src="index.js" type="text/javascript"></script>
-</body>
-</html>
-</body>
+	</body>
 </html>
