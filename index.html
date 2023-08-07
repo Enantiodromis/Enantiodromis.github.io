@@ -13,8 +13,11 @@
 
       This should be the same across all pages.
      -->
-     <link rel="icon" href="./assets/images/me2_2.jpg" />
+    <link rel="icon" href="./assets/images/me2_2.jpg" />
 		<title>George Bradley</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/utilities.css">
@@ -48,6 +51,9 @@
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
           <img src="./assets/images/me2_2.jpg" class="portfolio-header-image">
+          <!--<a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+            <span class="image-caption">Unemployables #1311</span>
+          </a>-->
         </div>
 
           <!-- 
@@ -59,8 +65,7 @@
           -->
         <div id="portfolio-header-text-container">
             <div class="header-text">
-              <!-- <span class="main-title">Hey, I'm George_</span>-->
-              <h1><span class="main-title">Hi! I am George</span> <span style="font-size:35px">&#128075</span></h1>
+              <span class="main-title">Hi! I am George</span> <span style="font-size:35px">&#128075</span></span>
               <div class="countup" id="countup1">
                 <b>I am </b>
                 <span class="years">00</span>
@@ -76,7 +81,7 @@
                 <b>old</b>
               </div>
               <br>
-              <div class="body-text">I’m a doctoral researcher, passionate about signal processing and finding solutions to real-world problems through the use of data and AI.</div>
+              
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Check out my projects</span> 
@@ -95,21 +100,20 @@
       <div id="about-section">
         <span class="subheader-text">My Background / About Me</span>
         <div class="about-section-content">
-          <div class="body-text">I completed my undergraduate degree in Computer Science from Newcastle University before moving to King's College London to complete a masters in artificial intelligence. Currently I am a doctoral researcher at City Univeristy's Research Centre for Biomedical Engineering My research is oriented around traumatic brain injury. 
-            <br><br>
-            <i>Research summary:</i><br>
-            My research aim is the creation of a non-invasive intracranial pressure (ICP) measurement algorithm, utilising photoplethysmography (PPG) signals collected from the forehand. ICP monitoring is a “gold standard” monitoring modality for severe TBI patients. The current monitoring technique for ICP is through the insertion of a probe through the skull in a procedure under a general anaesthetic. Efficacious ICP monitoring and intervention at clinically defined thresholds may reduce mortality and secondary injury to the brain. Current ICP monitoring is an invasive, high risk and expensive procedure which requires a high level of expertise as well as only being accessible in a hospital setting. My hope is to produce the first effective, non-invasive ICP measurement algorithm helping reduce the cost and complexity of ICP monitoring, consequently reducing the barrier to entry to efficacious monitoring, screening and intervention for patients and healthcare systems, perhaps helping towards the realisation of a "roadside" to "bedside" product.
-          <br><br>I am really excited about how AI and data can help transform healthcare. I am particularly interest in the shift away from exclusively in-hospital care through non/minimally invasive, continuous and ubiquitous physiological monitoring and patient care.   <br><br>Away from my computer I enjoy cycling, BJJ and most things water related, but especially freediving and spearfishing.</div>
+          <div class="body-text">I completed my undergraduate degree in Computer Science from Newcastle University before moving to King's College London to complete a masters in artificial intelligence. Currently I am a doctoral researcher at City Univeristy's Research Centre for Biomedical Engineering My research is oriented around traumatic brain injury.</div>
+          <div class="body-text"><b>Research summary:</b> My research aim is the creation of a non-invasive intracranial pressure (ICP) measurement algorithm, utilising photoplethysmography (PPG) signals collected from the forehand. ICP monitoring is a “gold standard” monitoring modality for severe TBI patients. The current monitoring technique for ICP is through the insertion of a probe through the skull in a procedure under a general anaesthetic. Efficacious ICP monitoring and intervention at clinically defined thresholds may reduce mortality and secondary injury to the brain. Current ICP monitoring is an invasive, high risk and expensive procedure which requires a high level of expertise as well as only being accessible in a hospital setting. My hope is to produce the first effective, non-invasive ICP measurement algorithm helping reduce the cost and complexity of ICP monitoring, consequently reducing the barrier to entry to efficacious monitoring, screening and intervention for patients and healthcare systems, perhaps helping towards the realisation of a "roadside" to "bedside" product.</div>
+          <div class="body-text">I am really excited about how AI and data can help transform healthcare. I am particularly interest in the shift away from exclusively in-hospital care through non/minimally invasive, continuous and ubiquitous physiological monitoring and patient care.   <br><br>Away from my computer I enjoy cycling, BJJ and most things water related, but especially freediving and spearfishing.</div>
         </div>
       </div>
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
         <span class="subheader-text">My Work / My Projects</span>
 
         <div class="projects-container">
-          
-            <!-- TODO
+          <!-- 
+            TODO
 
             This is where the project cards live. Here's a base level project card for you to copy:
             <div class="project-card">
@@ -124,12 +128,12 @@
               </a>
             </div>
 
-                - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
                 - IMAGE_NAME: the name of the image file in assets/images
                 - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
                 - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
-                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)-->
-        
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
           <div class="project-card">
             <img src="./assets/images/systematic_review.png" class="project-image">
             <div class="project-card-text-container">
@@ -152,45 +156,22 @@
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
-          <!--<div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>-->
         </div>
       </div>
     </div>
 
     <!-- FOOTER -->
     <div id="footer">
-      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/georgerebradley/">
-        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
-      </a>
       <a class="icon-link" target="_blank" href="https://github.com/Enantiodromis">
         <image src="./assets/icons/github.svg" class="footer-icon"/>
       </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
-      </a>-->
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/georgerebradley/">
+        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
       <a class="icon-link" href="mailto:georgerebradley@gmail.com">
         <image src="./assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>
+
 	</body>
 </html>
