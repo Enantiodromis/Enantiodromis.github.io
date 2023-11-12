@@ -25,7 +25,7 @@
       This should be the same across all pages.
      -->
      <link rel="icon" href="../assets/images/1311.png" />
-     <title>PPG Denoising Algorithm</title>
+     <title>Healthy Volunteers Study</title>
     <meta name="description" content="A portfolio template for the Unemployables community.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -44,7 +44,7 @@
 
           (this should be the same across all pages)
          -->
-        <span class="nav-title">PPG Denoising</span>
+        <span class="nav-title">Volunteers Study</span>
         <!-- 
           TODO - Change the email after 'mailto:' to your email address for contact 
         
@@ -68,9 +68,9 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Opening the envelope: Efficient Envelope-based PPG Denoising Algorithm</div>
-        <div class="body-text">The description and evaluation of a novel PPG denoising algorithm based upon the upper and lower envelopes of the signal. Published in Biomedical Signal Processing and Control <a href="https://www.sciencedirect.com/science/article/pii/S1746809423011266">Link</a> to article</a></div>
-        <image class="project-header-image" src="../assets/images/denoising.png">
+        <div class="main-title">Non-invasive monitoring of intracranial pressure changes: healthy volunteers study</div>
+        <div class="body-text">The investigation and evaluation of the association between pulsatile near infrared spectroscopic waveform features and induced changes in intracranial pressure in healthy volunteers. Published in Frontiers Physiology. <a href="https://www.frontiersin.org/articles/10.3389/fphys.2023.1208010/full">Link</a> to article</a></div>
+        <image class="project-header-image" src="../assets/images/volunteers_1.jpeg">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -83,22 +83,12 @@
       <div id="project-details">
         <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
-          <div class="body-text">Photoplethysmography (PPG) signals are non-invasive, cost-effective optical signals, easily obtained from the skin’s sur-
-            face using a light source and photodetector which provide insights into blood volume fluctuations by monitoring
-            changes in light absorption or reflection. With a growing interest in non-invasive physiological monitoring and a
-            shift towards continuous and ubiquitous patient care, photoplethysmography has received increased interest due to
-            an increased focus to monitor physiological measurements non-invasively, in parallel to a shift in demand to enable
-            continuous and ubiquitous patient monitoring rather than exclusively in-hospital care. This trend has led to the pro-
-            liferation of commercial and healthcare orientated devices using photoplethysmography data.  <br><br>Despite its potential,
-            photoplethysmography signals are prone to various forms of noise, which can distort the signal and hinder reliable
-            feature extraction. As research in this field progresses and PPG data collection becomes more prevalent, effective data
-            pre-processing approaches are becoming increasingly crucial for retrospective and real-time analysis.  <br><br>Addressing this
-            challenge and given my core research dataset I developed and evaluated a novel PPG denoising algorithm. The approach has been shown to be efficacious
-            in the denoising of PPG data, reporting significant differences in the Signal-to-noise ratio, Variance, Total Variation
-            and Entropy after denoising whilst processing 70.3 minutes of data per second. The evaluation is predicated upon a
-            dataset of 0.486 billion instances, representing approximately 81,015.99 minutes or 1350.27 hours of data collected
-            from 31 patients. The algorithm aims to provide a simple yet effective approach to denoising whilst fostering advancements in non-invasive physiological marker monitoring and
-            promoting the broader adoption of PPG-based healthcare technologies</div>
+          <div class="body-text">An optical intracranial pressure sensor was attached to the forehead of 16 healthy volunteers. Pulsatile near infrared spectroscopic signals were acquired from the forehead during body position changes and Valsalva manoeuvers. Features were extracted from the pulsatile signals and analyses were carried out to investigate the presence of statistical differences in the features when intracranial pressure changes were induced. Classification models were developed utilizing the features extracted from the pulsatile near-infrared spectroscopic signals to classify between different body positions and Valsalva manoeuvre.<br><br>
+            
+            The results revealed significant differences in the features extracted from these signals, demonstrating a correlation with ICP changes induced by positional changes and Valsalva manoeuvre. Classification models were capable of identifying changes in ICP using features from optical signals from the brain, with a sensitivity ranging from 63.07% to 80% and specificity ranging from 60.23% to 70% respectively. These findings underscored the potential of these features to effectively identify alterations in ICP.<br><br>
+            
+            The study’s results demonstrate the feasibility of using features extracted from optical signals from the brain to detect changes in ICP induced by positional changes and Valsalva manoeuvre in healthy volunteers. This represents a first step towards the non-invasive monitoring of intracranial pressure.
+          </div>
           
         </div>
       </div>
@@ -132,18 +122,12 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/denoising_1.png" class="gallery-image">
-              <span class="image-caption">Figure with four subplots, each subplot contains 2 boxplots representing the values for the signal-to-noise ratio, variance, total variation
-                and entropy of the data before and denoising.</span>
+              <img src="../assets/images/volunteers_2.jpeg" class="gallery-image">
+              <span class="image-caption">Features extracted from the optical signals. F1: Amplitude; F2: Pulse width; F3: Up slope; F4: Decay time; F5: Rise time; F6: Area under the curve; F7: Area of the systolic period; F8: Area of the diastolic period; F9: Ratio between both systolic and diastolic areas.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/denoising_3.png" class="gallery-image">
-              <span class="image-caption">Figure with two subplots: The left subplot shows the results of the optimized anomaly detection approach (count: 28). The right subplot
-                displays the results of the unoptimized anomaly detection approach (count: 1540). A 5400% difference between the two approaches.</span>
-            </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/denoising_2.png" class="gallery-image">
-              <span class="image-caption">Figure with two subplots: The top subplot presents the raw data of an entire patient. The bottom subplot illustrates the denoised data.</span>
+              <img src="../assets/images/volunteers_3.jpeg" class="gallery-image">
+              <span class="image-caption">Sectioned signals per intervention. (A) Tilting, where the distal (blue) and proximal (orange) signals were sectioned to identify initial supine position, the transition from supine to Trendelenburg (−30°), Trendelenburg position, the transition to supine and final supine position. (B) Valsalva, where the distal (blue) and proximal (orange) signals were sectioned to identify the baseline condition and the three different Valsalva maneuvers.</span>
             </div>
         </div>
       </div>
