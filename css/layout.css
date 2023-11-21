@@ -20,7 +20,6 @@ body {
   width:100%;
   columns:1;
   column-gap:7%;
-  z-index:1;
   transition:0.4s ease-in-out;
 }
 #photos1 img {
