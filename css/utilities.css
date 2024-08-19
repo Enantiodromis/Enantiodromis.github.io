@@ -1,14 +1,20 @@
-/* Footer Styling */
-.footer-icon {
-  width: 25px;
-  height: 25px;
+.intro-scentence {
+  margin-top: -30px;
+  margin-bottom: -10px;
 }
 
-#footer {
+
+/* Footer Styling */
+.footer {
   width: 100%;
   display: flex;
   margin-bottom: -10px;
   gap: 20px;
+}
+
+.footer-icon {
+  width: 25px;
+  height: 25px;
 }
 
 a.icon-link {
