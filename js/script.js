@@ -19,10 +19,13 @@ function countUpFromTime(countFrom, id) {
     var secondsInAYear = 365.25 * 24 * 60 * 60;
 
     var years = Math.floor(timeDifference / (secondsInAYear * 1000));
-    var days = Math.floor((timeDifference % (secondsInAYear * 1000)) / (secondsInADay * 1000));
-    var hours = Math.floor((timeDifference % (secondsInADay * 1000)) / (secondsInAnHour * 1000));
-    var minutes = Math.floor((timeDifference % (secondsInAnHour * 1000)) / (secondsInAMinute * 1000));
-    var seconds = Math.floor((timeDifference % (secondsInAMinute * 1000)) / 1000);
+    var remainingAfterYears = timeDifference % (secondsInAYear * 1000);
+    var days = Math.floor(remainingAfterYears / (secondsInADay * 1000));
+    var remainingAfterDays = remainingAfterYears % (secondsInADay * 1000);
+    var hours = Math.floor(remainingAfterDays / (secondsInAnHour * 1000));
+    var remainingAfterHours = remainingAfterDays % (secondsInAnHour * 1000);
+    var minutes = Math.floor(remainingAfterHours / (secondsInAMinute * 1000));
+    var seconds = Math.floor((remainingAfterHours % (secondsInAMinute * 1000)) / 1000);
 
     var idEl = document.getElementById(id);
     idEl.getElementsByClassName('years')[0].innerHTML = years;
@@ -34,3 +37,4 @@ function countUpFromTime(countFrom, id) {
     clearTimeout(countUpFromTime.interval);
     countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
 }
+
