@@ -51,9 +51,6 @@
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
           <img src="./assets/images/me2_2.jpg" class="portfolio-header-image">
-          <!--<a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-            <span class="image-caption">Unemployables #1311</span>
-          </a>-->
         </div>
 
           <!-- 
@@ -66,22 +63,39 @@
         <div id="portfolio-header-text-container">
             <div class="header-text">
               <span class="main-title">Hi! I am George</span> <span style="font-size:35px">&#128075</span></span>
-		<div class="countup" id="countup1">
-		<b>I am </b>
-		<span class="years">00</span>
-		<span class="timeRefYears">years</span>
-		<span class="days">00</span>
-		<span class="timeRefDays">days</span>
-		<span class="hours">00</span>
-		<span class="timeRefHours">hours</span>
-		<span class="minutes">00</span>
-		<span class="timeRefMinutes">minutes</span>
-		<span class="seconds">00</span>
-		<span class="timeRefSeconds">seconds</span>
-		<b>old</b>
+                <div class="countup" id="countup1">
+                  <b>I am </b>
+                  <span class="years">00</span>
+                  <span class="timeRefYears">years</span>
+                  <span class="days">00</span>
+                  <span class="timeRefDays">days</span>
+                  <span class="hours">00</span>
+                  <span class="timeRefHours">hours</span>
+                  <span class="minutes">00</span>
+                  <span class="timeRefMinutes">minutes</span>
+                  <span class="seconds">00</span>
+                  <span class="timeRefSeconds">seconds</span>
+                  <b>old</b>
               	</div>
               <br>
-              
+            </div>
+            
+            <div id="intro-scentence">
+            I enjoy working with large and complex datasets, developing algorithms, and training models. I am motivated by the potential of data and AI to drive change.
+            </div>
+            <div id="footer-icons">
+              <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/georgerebradley/">
+                <img src="./assets/icons/linkedin.png" class="footer-icon"/>
+              </a>
+              <a class="icon-link" target="_blank" href="https://github.com/Enantiodromis">
+                <img src="./assets/icons/github.svg" class="footer-icon"/>
+              </a>
+              <a class="icon-link" href="https://scholar.google.com/citations?user=ddPfQ4sAAAAJ&hl=en">
+                <img src="./assets/icons/google-scholar.svg" class="footer-icon"/>
+              </a>
+              <a class="icon-link" href="mailto:work@george-bradley.com">
+                <img src="./assets/icons/email.svg" class="footer-icon"/>
+              </a>
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Check out my projects</span> 
@@ -90,19 +104,31 @@
         </div>
       </div>
 
-      <!-- ABOUT SECTION -->
-      <!-- 
-        TODO
 
-        - Change the subheader-text to whatever header you want
-        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
-      -->
+
+      <!-- ABOUT SECTION -->
       <div id="about-section">
-        <span class="subheader-text">My Background / About Me</span>
+        <span class="subheader-text">About Me</span>
         <div class="about-section-content">
-          <div class="body-text">I recently completed my PhD at City University's Research Centre for Biomedical Engineering, where my research focused on addressing critical needs in neurocritical care by leveraging large and challenging clinical biomedical data. Prior to this, I obtained a master's degree in artificial intelligence from King's College London, and I hold an undergraduate degree in Computer Science from Newcastle University.</div>
-          <div class="body-text"><b>Research summary:</b> My research aim is the creation of a non-invasive intracranial pressure (ICP) measurement algorithm, utilising photoplethysmography (PPG) signals collected from the forehand. ICP monitoring is a “gold standard” monitoring modality for severe TBI patients. The current monitoring technique for ICP is through the insertion of a probe through the skull in a procedure under a general anaesthetic. Efficacious ICP monitoring and intervention at clinically defined thresholds may reduce mortality and secondary injury to the brain. Current ICP monitoring is an invasive, high risk and expensive procedure which requires a high level of expertise as well as only being accessible in a hospital setting. My hope is to produce the first effective, non-invasive ICP measurement algorithm helping reduce the cost and complexity of ICP monitoring, consequently reducing the barrier to entry to efficacious monitoring, screening and intervention for patients and healthcare systems, perhaps helping towards the realisation of a "roadside" to "bedside" product.</div>
-          <div class="body-text">I am really excited about how AI and data can help transform healthcare. I am particularly interested in the shift away from exclusively in-hospital care through non/minimally invasive, continuous and ubiquitous physiological monitoring and patient care.   <br><br>Away from my computer I enjoy cycling, BJJ and most things water related, but especially freediving and spearfishing.</div>
+          <div class="body-text">I recently completed my PhD at City University's Research Centre for Biomedical Engineering, where my research focused on addressing critical needs in neurocritical care by leveraging large and challenging clinical biomedical data. Prior to this, I obtained a master's degree in artificial intelligence from King's College London, and I hold an undergraduate degree in Computer Science from Newcastle University.
+
+          </div>
+          <div class="body-text">
+            <b>Doctoral Research</b>
+            <img src="./assets/images/pulse_wave_features.png" alt="Image Description" style="float: right; margin-left: 15px; margin-top: 30px; margin-bottom: 10px; width: 460px;">
+            <br>
+            My research focused on contributing to the development of the first non-invasive, point-of-care device for intracranial pressure (ICP) monitoring. Traumatic brain injury (TBI) is classified as mild, moderate, or severe, with the majority of cases being mild or moderate. ICP monitoring is a “gold standard” monitoring modality for severe traumatic brain injury (TBI) patients. In 21st century the "gold standard" approach to monitoring is through the drilling of a burr hole and insertion of a probe through the skull into the brain in a procedure under a general anaesthetic. It is an invasive, high risk and expensive procedure reserved for severe TBI patients and only accessible in a hospital setting. 
+            <br>
+            <br>
+            Effective ICP monitoring and intervention can reduce secondary brain injury and patient mortality. However, millions of mild and moderate TBI patients lack access to continuous, quantitative assessment due to the lack of an effective non-invasive monitoring modality.
+            <br>
+            <br>
+            My research utilised data collected with an in-house, non-invasive ICP (nICP) sensor, leveraging the largest clinically collected photoplethysmography (PPG) dataset labelled with invasive ICP data to date, sourced from patients at the Royal London Hospital. The research focused on statistical analysis, algorithm development, and the implementation of machine learning models to evaluate the relationship between PPG features and ICP in TBI patients.
+            <br>
+            <br>
+            This work contributes to the ongoing efforts to develop a non-invasive, point-of-care device for ICP monitoring, aimed at reducing barriers to ICP monitoring and making effective screening and intervention more accessible to a broader patient population.
+        </div>
+        <div class="body-text"><b>Other Interests</b><br>Away from my computer I enjoy cycling, BJJ and most things water related, but especially freediving and spearfishing.</div>
         </div>
         <!-- Add padding between divs -->
         <div class="spacer"></div>
@@ -179,19 +205,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- FOOTER -->
-    <div id="footer">
-      <a class="icon-link" target="_blank" href="https://github.com/Enantiodromis">
-        <image src="./assets/icons/github.svg" class="footer-icon"/>
-      </a>
-      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/georgerebradley/">
-        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
-      </a>
-      <a class="icon-link" href="mailto:georgerebradley@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
-      </a>
     </div>
 
 	</body>
