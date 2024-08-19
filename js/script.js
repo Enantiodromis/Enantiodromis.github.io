@@ -4,7 +4,7 @@ if (document.getElementById('my-work-link')) {
   })
 }
 
-var run = countUpFromTime('1990-07-31 06:00:00', 'countup1');
+var run = countUpFromTime('1998-07-31 06:00:00', 'countup1');
 window.onload = run
 
 function countUpFromTime(countFrom, id) {
