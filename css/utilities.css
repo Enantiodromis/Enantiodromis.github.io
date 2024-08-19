@@ -83,7 +83,7 @@ a.button:hover {
   margin-bottom: 10px
 }
 
-#footer-icons {
+#icons {
   display: flex;
   justify-content: flex-start; /* Align icons to the left; change to center if you want them centered */
   gap: 16px; /* Space between icons */
@@ -93,7 +93,7 @@ a.button:hover {
 }
 
 /* Footer icon individual styling */
-.footer-icon {
+.icon {
   width: 25px;
   height: 25px;
 }
