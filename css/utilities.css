@@ -8,8 +8,8 @@
 }
 
 .footer-icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 a.icon-link {
@@ -22,7 +22,6 @@ a.icon-link:hover {
   margin: 0;
   transform: rotate(15deg);
 }
-
 
 /* Navbar Styling */
 
@@ -75,36 +74,32 @@ a.button:hover {
   cursor: pointer;
 }
 
-
 /* Footer Styling */
-
-#intro-scentence{
-  margin-top: -30px;
-  margin-bottom: 10px
-}
-
-#footer-icons {
+#footer {
+  width: 100%;
   display: flex;
-  justify-content: flex-start; /* Align icons to the left; change to center if you want them centered */
-  gap: 16px; /* Space between icons */
-  margin-top: -20px; /* Space below icons, before the button */
-  margin-left: 1px; /* Space below icons, before the button */
-  margin-bottom: -10px; /* Space below icons, before the button */
-}
-
-/* Footer icon individual styling */
-.footer-icon {
-  width: 25px;
-  height: 25px;
+  gap: 16px;
 }
 
 /* Link Styling */
 a.no-underline {
   text-decoration: none;
-  color: black;
+  color: black
 }
 
 a.no-underline:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 800px) {
+  #footer {
+    padding: 20px 20px;
+  }
+}
+
+#intro-scentence {
+  margin-top: -30px;
+  margin-bottom: -10px;
 }
