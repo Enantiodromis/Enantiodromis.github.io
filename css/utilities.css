@@ -1,8 +1,8 @@
+/* Intro Sentence Styling */
 .intro-scentence {
   margin-top: -30px;
   margin-bottom: -10px;
 }
-
 
 /* Footer Styling */
 .footer {
@@ -62,7 +62,7 @@ a.icon-link:hover {
 @media only screen and (max-width: 1080px) {
   .navbar {
     padding: 20px 20px;
-    background-color: white
+    background-color: white;
   }
 }
 
@@ -84,4 +84,3 @@ a.button:hover {
   text-decoration-thickness: 2px;
   cursor: pointer;
 }
-
