@@ -1,0 +1,110 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>PPG Features Analysis</title>
+    <meta name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">PPG Features Analysis</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:work@george-bradley.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">Exploring the Dynamic Relationship: Changes in Photoplethysmography Features Corresponding to Intracranial Pressure Variations</div>
+        <div class="body-text">This study investigates the relationship between photoplethysmography (PPG) signals and intracranial pressure (ICP).</div>
+        <image class="project-header-image" src="../assets/images/Features_1.png">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">This study investigates the relationship between photoplethysmography (PPG) signals and intracranial pressure (ICP) through two primary hypotheses. 
+            Firstly, it examines whether alterations in PPG-derived features correspond to changes in ICP levels. Secondly, it explores whether these changes are more pronounced in features derived from cerebral long-distance near-infrared (NIR) PPG data compared to extracerebral short-distance NIR-PPG data.
+            <br><br>A clinical dataset comprising synchronised measurements from a non-invasive NIR-PPG sensor and an intra-parenchymal, invasive ICP pressure probe across 27 patients was compiled. From this dataset, two distinct datasets were derived, comprising short and long-distance NIR-PPG data. 
+            Within each dataset, 141 features were extracted for every one-minute window of non-invasive NIR-PPG data, including original, first derivative, and second derivative features. Correlation analysis using Spearman's correlation and a non-parametric Kruskal-Wallis test across the range of ICP values were conducted to evaluate the relationship between features and ICP levels. 
+            
+            <br><br>The results support both hypotheses, showing significant correlations between the features and ICP levels. Specifically, 77.30% and 79.43% of features significantly correlated (p < 0.05) with the label in distal and proximal datasets, respectively. Kruskal-Wallis analysis revealed that 81.56% and 75.89% of features significantly changed (p < 0.05) across ICP groups 0-10, 10-20, and 20-39 mmHg. The distal dataset yielded a meaningfully higher absolute average correlation coefficient of all features and significantly correlated features in-comparison to the proximal dataset of 25.76% and 24.24% respectively. These findings indicate NIR-PPG features are reflective of variations in ICP.</div>
+          
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/Peak_detection_steps.png" class="gallery-image">
+              <span class="image-caption">This figure illustrates the major steps of the peak detection algorithm. The process begins with the calculation of the moving average and identification of the crossing points between the moving average and the raw data. Next, the algorithm determines the maximum and minimum values between each pair of crossing points, highlighted by green and red arrows, respectively. Finally, each detected peak is linked to its corresponding pulse onset and end, isolating individual pulses.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/distribution_plot.png" class="gallery-image">
+              <span class="image-caption">A histogram illustrating the distribution of intracranial pressure values within the dataset.</span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/Top_10_Distal_Group_442_SEED.png" class="gallery-image">
+              <span class="image-caption">A figure presenting 10 boxplots illustrating the variation in feature values across different ICP groups. These boxplots correspond to the 10 features with the most significant differences in a Kruskal-Wallis analysis on distal feature data. They display distributions for both proximal and distal feature data. The central line represents the median, the box encompasses the interquartile range (IQR), and the whiskers denote the range within 1.5 times the IQR from the quartiles.</span>
+            </div>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>
