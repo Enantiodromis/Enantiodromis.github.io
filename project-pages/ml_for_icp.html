@@ -1,0 +1,108 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>Machine Learning for ICP</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">Machine Learning for ICP</span>
+        <a class="button" href="mailto:work@george-bradley.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">Evaluating the effectiveness of non-invasive intracranial pressure monitoring via near-infrared photoplethysmography using classical machine learning methods</div>
+        <div class="body-text">This study investigates the feasibility of utilising photoplethysmography signals to estimate continuous intracranial pressure (ICP) values in patients with traumatic brain injury. <br><br><a href="https://www.sciencedirect.com/science/article/pii/S1746809424005755">Published in Biomedical Signal Processing and Control</a></div>
+        <image class="project-header-image" src="../assets/images/MAE RESULTS.png">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">A clinical dataset was compiled, comprising synchronised data from a non-invasive optical sensor and an invasive gold standard ICP monitor from 27 patients. 
+            Two datasets, derived from short and long-distance NIRS, were generated from this data. For each dataset, 141 features were extracted for every one-minute window of non-invasive data. 
+            A total of 5 classical regression models were implemented, optimised and assessed. The study aimed to evaluate the models’ performance for the continuous, non-invasive monitoring of ICP using a leave-one-patient out cross validation approach. 
+            <br><br>Feature selection was conducted using recusive feature elimination, using a leave one group out cross validation scheme. Each models' hyperparameters were opitmised using Optuna a Bayesian optimisation framework.
+            The 5 models were trained and evaluated on both the long and short distance NIRS data. The lowest mean absolute error (MAE) and root mean squared error (RMSE) were obtained using features derived from long-distance NIRS. A Random Forest (RF) model achieved the lowest MAE and RMSE of 5.030 and 4.067 mmHg respectively. The RF exhibited wide limits of agreement with the reference method. This was reflected in the 95% Bland–Altman limits of agreement, ranging from 8.782 to -8.487 mmHg.
+            <br><br>
+            This research brings novel insights to non-invasive ICP monitoring through the investigation of the largest clinically collected NIR-PPG dataset from patients with severe TBI and invasive ICP monitoring and the investigation into the possibility of predicting ICP non-invasively using exclusively morphological and time series features from NIRS-PPG. This research area is nascent and evolving and future work is required. The outcomes of this study provide a solid groundwork for future research within this domain.</div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/RFECV_COMBINED.png" class="gallery-image">
+              <span class="image-caption">A figure with two subplots illustrating recursive feature elimination plots applied to a subset of features. The plots demonstrate the variation in negative Root Mean Squared Error as the number of features changes. A dashed red line represents the number of features with support returned by recursive feature elimination. The left subplot corresponds to the proximal dataset, while the right subplot corresponds to the distal dataset.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/LIMITS RESULTS.png" class="gallery-image">
+              <span class="image-caption">A bar chart representing the Bland–Altman upper and lower limits of agreement for each model, calculated at the 95% confidence level. The bars in the chart indicate the upper and lower limits of agreement, representing the range within which most of the differences between predicted and actual values lie with 95% confidence.</span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/nICP_Traces.png" class="gallery-image">
+              <span class="image-caption">A three-subplot figure illustrating non-invasive ICP signal data. Two subplots showcase a 30-second window each, with one capturing data from a period of elevated ICP and the other from a period of low ICP. The third subplot presents the entire ICP dataset, emphasising the sampled areas.</span>
+            </div>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>
